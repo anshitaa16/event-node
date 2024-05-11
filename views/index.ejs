@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Document</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* General styles */
+    html, body {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(black, #0E0D41, #082C4B);
+      font-family: Arial, Helvetica, sans-serif;
+      color: white; 
+    }
+    
+    header {
+      height: 80px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      margin-left: 50px;
+    }
+    .side {
+      display: flex;
+    }
+    .side h1 {
+      font-size: 18px;
+      margin-right: 50px;
+    }
+    .side h1 a {
+      color: inherit; /* Inherit text color from parent */
+      text-decoration: none;
+      transition: all ease 0.2s;
+    }
+    .side h1 a:hover {
+      transform: scale(1.1); /* Adjust hover effect */
+      color: yellowgreen;
+    }
+    header .side box-icon{
+      color: white;
+      font-size: 20px;
+    }
+    /* Box styles */
+    .box {
+      height: 88%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .bx {
+      height: 100%;
+      width: 40%;
+    }
+    .bx h2 {
+      font-size: 20px;
+      color: #20DBD4;
+      padding-top: 140px;
+    }
+    .bx h1 {
+      font-size: 60px;
+      line-height: 52px;
+      margin-top: 20px;
+    }
+    .bx p {
+      font-size: 25px;
+      margin-top: 20px;
+      font-weight: 100;
+      line-height: 40px;
+    }
+    button {
+      padding: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      background-color: #ED483E;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      transition: all ease 0.5s;
+    }
+    button:hover {
+      background-color: white;
+      color: #ED483E;
+    }
+    /* Media query for smaller screens */
+    @media only screen and (max-width: 720px) and (max-height: 1544px) {
+      
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img height="70px" width="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOk4wDEk8d-ZIUBq1CwpHxc08MwVHHn--sdQ&usqp=CAU" alt="Logo">
+    <div class="side">
+      <h1><a href="/">HOME</a></h1>
+      <h1><a href="/register">REGISTER</a></h1>
+      <h1><a href="/signin">SIGN-IN</a></h1>
+      <h1><a href="/create-event">CREATE-EVENT</a></h1>
+      <h1><a href="/details">EVENT-DETAILS</a></h1>
+      <box-icon name='menu'></box-icon>
+
+    </div>
+  </header>
+  <div class="box">
+    <div class="bx" id="bx1">
+      <h2>ALL-IN-ONE EVENT MANAGEMENT SOFTWARE</h2>
+      <h1>Built for the events <br> of today—and  <br>tomorrow</h1>
+      <p>Everything you need to craft impactful event <br> experiences all while staying technologically <br> relevant, now and always.</p>
+      <form action="/register" method="get">
+        <button>SIGN UP FOR FREE</button>
+      </form>
+    </div>
+    <div class="bx" id="bx2">
+      <video loop autoplay muted height="100%" width="100%">
+        <source src="https://player.vimeo.com/external/529495184.sd.mp4?s=d317f146c5aa4f397ea1d24fae53f5bf4ec64c6a&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
