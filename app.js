@@ -13,8 +13,9 @@ const passport = require("passport");
 const session = require("express-session");
 
 const User = require("./models/schema");
+const cors = require("cors");
 
-
+app.use(cors());
 app.use(
     session({
         saveUninitialized: true,
